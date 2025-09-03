@@ -18,7 +18,10 @@
       height: 200px;
     }
     .col {
-      border: 2px dotted rgb(38, 38, 43);
+      border: 1px dotted black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
@@ -37,24 +40,28 @@
       </div>
     </div>
 
-    <!-- Row 2 -->
+    <!-- Row 2 (empty spaces left + right) -->
     <div class="row">
-      <div class="col-md-4 offset-md-2 col-sm-6" style="background-color: tomato;">
+      <div class="col-md-2" style="background-color: rgb(41, 0, 0);"></div>
+      <div class="col-md-4 col-sm-6" style="background-color: tomato;">
         Row2 col1
       </div>
+      <div class="col-md-2" style="background-color: rgb(41, 0, 0);"></div>
       <div class="col-md-4 col-sm-6" style="background-color: turquoise;">
         Row2 col2
       </div>
     </div>
 
-    <!-- Row 3 -->
-    <div class="row justify-content-center">
+    <!-- Row 3 (bigger empty spaces on both sides) -->
+    <div class="row">
+      <div class="col-md-2" style="background-color: rgb(41, 0, 0);"></div>
       <div class="col-md-4 col-sm-6" style="background-color: violet;">
         Row3 col1
       </div>
       <div class="col-md-4 col-sm-6" style="background-color: yellowgreen;">
         Row3 col2
       </div>
+      <div class="col-md-2" style="background-color: rgb(41, 0, 0);"></div>
     </div>
   </div>
 
